@@ -1,5 +1,6 @@
 import { useRouter } from "next/dist/client/router"
 import Link from 'next/link'
+import Image from 'next/image'
 import {server} from '../../../config'
 import Meta from '../../../components/Meta'
 
@@ -20,7 +21,7 @@ const article = ({ article }) => {
                 <Link href="/">&larr; Go Back</Link>
             </div>
             <div className="ArticleImageSection">
-                <img style={{maxWidth:'100%', height:'auto'}} src={article.articleImage} />
+                <Image width="500px" height="350px" src={article.articleImage} alt="article image"/>
             </div>
         </div>
 
