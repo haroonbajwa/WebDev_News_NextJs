@@ -33,7 +33,6 @@ const article = ({ article }) => {
                     display:flex;
                 }
                 .contentSection {
-                    border-radius: 20px;
                     margin: 10px;
                     width: 60%;
                     flex: 1;

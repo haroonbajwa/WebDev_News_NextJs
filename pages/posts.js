@@ -1,10 +1,12 @@
 import { server } from '../config';
 import PostsList from '../components/PostsList';
+import Meta from '../components/Meta';
 
 export default function Home({ posts }) {
   
   return (
-    <div>    
+    <div>
+      <Meta title="Posts" />
       <PostsList posts={posts} />
     </div>
   )

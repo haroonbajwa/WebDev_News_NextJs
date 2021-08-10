@@ -6,7 +6,7 @@ const PostsList = ({ posts }) => {
     return (
         <div className={articleStyles.postsgrid}>
             {posts.map(post => (
-                < PostItem post={post} />
+                < PostItem key={post.id} post={post} />
             ))}
         </div>
     )

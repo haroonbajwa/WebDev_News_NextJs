@@ -52,11 +52,7 @@
     border-color: #0070f3;
   }
 
-  .card image{
-    object-fit: contain;
-    width: 100% !important;
-    position: relative !important;
-    height: unset !important;
+  .card .image{
     border-radius: 10px;
   }
   

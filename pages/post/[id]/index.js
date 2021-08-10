@@ -1,6 +1,4 @@
-import { useRouter } from "next/dist/client/router"
 import Link from 'next/link'
-import {server} from '../../../config'
 import Meta from '../../../components/Meta'
 
 const post = ({ post }) => {
@@ -9,13 +7,26 @@ const post = ({ post }) => {
     // const { id } = router.query;
 
     return (
-        <div style={{width:"80%", marginTop: "50px"}}>
+        <>
+        <div className="singlePostView">
             <Meta title={post.title} description={post.body} />
             <h1>{post.title}</h1>
             <p>{post.body}</p>
             <br/>
             <Link href="/posts">&larr; Go Back</Link>
         </div>
+
+        <style jsx>
+            {`
+                .singlePostView {
+                    width:80%;
+                    margin-top: 50px;
+                }
+                
+            `}
+        </style>
+
+        </>
     )
 }
 
